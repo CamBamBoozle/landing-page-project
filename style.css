@@ -41,7 +41,7 @@ li {
     margin: 0px;
 }
 
-.left button {
+button {
     width: fit-content;
 }
 
@@ -75,4 +75,28 @@ li {
     height: 175px;
     border-radius: 1em;
     background-color: aquamarine;
+}
+
+.bottom-inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0px;
+    padding: 50px;
+
+}
+
+.bottom {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
