@@ -1,8 +1,11 @@
 
 html {
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
     align-items: center;
+
+    background-color: #f9faf8;
 }
 
 body {
@@ -10,18 +13,17 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    max-width: 1500px;
 }
 
 .header {
     display: flex;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     align-items: center;
     justify-content: space-between;
 
     background-color: #1f2937;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
 }
 
 .logo {
@@ -32,7 +34,7 @@ body {
 
 .links {
     display: flex;
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     gap: 32px;
 
     font-size: 18px;
@@ -47,12 +49,12 @@ li {
 .top {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     gap: 32px;
 
     background-color: #1f2937;
     color: #e5e7eb;
-    padding: 32px;
+    padding: 64px;
 }
 
 .left {
@@ -67,37 +69,51 @@ li {
     margin: 0px;
 }
 
+.right img {
+    background-color: #1f2937;
+}
+
 button {
     width: fit-content;
     background-color: #3882f6;
     padding: 8px;
-
+    padding-right: 22px;
+    padding-left: 22px;
     color:#e5e7eb;
     border-style: none;
     border-radius: 0.5em;
 }
 
-.call .button {
+.call button {
     border: 2px solid #e5e7eb;
 }
 
 .right {
     width: 500px;
     height: 150px;
-    background-color: aquamarine;
+    background-color: #616161;
 }
 
 .top-inside {
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
+    align-items: center;
     padding: 32px;
+
+    background-color: #f9faf8
+}
+
+.top-inside h2 {
+    font-size: 24px;
+    font-weight: 1000;
+    color: #1f2937;
 }
 
 .content {
     display: flex;
-    flex: 0 1 auto;
-    gap: 32px;
-    justify-content: center;
+    flex: 1 1 auto;
+    gap:32px;
 
     padding-left: 32px;
     padding-right: 32px;
@@ -107,14 +123,19 @@ button {
     max-width: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .item img {
     width: 175px;
     height: 175px;
     border-radius: 1em;
-    background-color: aquamarine;
+    background-color: #f9faf8;
+    border: 4px solid #3882f6;
+}
+
+.item p {
+    text-align: center;
 }
 
 .bottom-inside {
@@ -129,7 +150,7 @@ button {
 }
 
 .bottom-inside p {
-    margin: 0px;
+    margin:0px;
 }
 
 .bottom-inside .container {
@@ -147,6 +168,8 @@ button {
     align-items: center;
     justify-content: center;
     padding: 88px;
+
+    background-color: #f9faf8
 }
 
 .call {
